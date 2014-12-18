@@ -1,0 +1,61 @@
+<div class="container">
+		<div class="row">
+				<div class="navbar navbar-inverse">
+					  <div class="navbar-header">
+					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+					    </button>
+					    <a class="navbar-brand" href="#">Brand</a>
+					  </div>
+					  <div class="navbar-collapse collapse navbar-inverse-collapse">
+					    <ul class="nav navbar-nav">
+					      <li> <a ui-sref="home" >Home</a></li>
+					      <li> <a ui-sref="about">About</a></li>
+					   	  <li> <a ui-sref="contact">Contact</a></li>	
+					    <form class="navbar-form navbar-left">
+					      <input type="text" class="form-control col-lg-8" placeholder="Search">
+					    </form>
+					  </div>
+					</div>
+		</div> <!-- row -->
+	</div>	<!-- container -->
+
+	<div class="container">
+	  <div class="jumbotron text-center">
+	    <h1>Home</h1>
+	    <p class="lead">The Bootstrap 3 grid is fluid only. This example shows how to use a custom container to create a fixed width layout.</p>
+	    <p><a ui-sref="list"> Click </a></p> 
+	    <div ui-view></div> 
+  </div>
+
+
+
+
+  <div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://placehold.it/140x140">
+      <h2>Mobile-first</h2>
+      <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
+      <p><a class="btn btn-default" ui-sref="sss">View details »</a></p>
+       <div ui-view="foot"></div>
+	    <div ui-view="gg"></div>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://placehold.it/140x140">
+      <h2>One Fluid Grid</h2>
+      <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
+      <p><a class="btn btn-default" href="#">View details »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://placehold.it/140x140">
+      <h2>LESS is More</h2>
+      <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
+      <p><a class="btn btn-default" href="#">View details »</a></p>
+    </div>
+  </div><!-- /.row -->
+
